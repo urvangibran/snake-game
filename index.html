@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="https://i.ibb.co/HPFd8j2/favicon1.jpg" type="image/jpg">
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="details">
+      <span class="score">Score: 0</span>
+      <span class="high-score">High Score: 33</span>
+    </div>
+    <div class="board"></div>
+    <div class="modal fade" id="gameOverModal" tabindex="-1" role="dialog" aria-labelledby="gameOverModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="gameOverModalLabel">Game Over!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Try Again...
+          </div>
+          <div class="modal-footer">
+            <button id="try-again-btn" type="button" class="btn btn-secondary" data-dismiss="modal"> <img
+                class="play-button-img" src="play-button.png" alt="play-button">Play Again</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="controls">
+      <i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long"></i>
+      <i data-key="ArrowRight" class="fa-solid fa-arrow-right-long"></i>
+      <i data-key="ArrowUp" class="fa-solid fa-arrow-up-long"></i>
+      <i data-key="ArrowDown" class="fa-solid fa-arrow-down-long"></i>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
